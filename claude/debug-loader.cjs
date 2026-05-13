@@ -3,6 +3,7 @@
 // Intercepts:
 //   1. `require("bun:ffi")`              → no-op stub (bun-only API)
 //   2. `require("/$bunfs/root/*.node")`  → no-op native module stub
+//   3. globalThis.Bun                    → Node polyfill (string-width, spawn, hash, …)
 //
 // These resolve fail when running cli.js OUTSIDE the bun single-file-executable.
 // Stubs let us at least load the module graph; touching a stubbed feature at
@@ -22,3 +23,6 @@ Module._resolveFilename = function (request, parent, ...rest) {
   }
   return origResolve.call(this, request, parent, ...rest);
 };
+
+// Install globalThis.Bun polyfill (must run before cli-naked.js evaluates).
+require(path.join(__dirname, "stubs", "bun-global.cjs"));
