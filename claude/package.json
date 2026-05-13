@@ -1,0 +1,20 @@
+{
+  "name": "cli-debug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli-naked.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "undici": "^8.2.0",
+    "ws": "^8.20.0",
+    "yaml": "^2.8.4"
+  }
+}
