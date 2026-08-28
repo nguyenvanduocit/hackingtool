@@ -207,6 +207,7 @@
 - [CheckURL](https://github.com/UndeadSec/checkURL)
 - [Sub-Domain TakeOver](https://github.com/edoardottt/takeover)
 - [Dirb](https://gitlab.com/kalilinux/packages/dirb)
+- [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPLv3) autonomous AI penetration testing platform: 50+ offensive tools across web, cloud, AD and Kubernetes, self-hosted, the model never receives your real IPs or credentials.
 - [Nuclei](https://github.com/projectdiscovery/nuclei) ★
 - [ffuf](https://github.com/ffuf/ffuf) ★
 - [Feroxbuster](https://github.com/epi052/feroxbuster) ★
